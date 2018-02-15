@@ -11,8 +11,8 @@
     <param name="calibrate_time" value="true"/>
     <param name="publish_intensity" value="false"/>
     <param name="publish_multiecho" value="false"/>
-    <param name="angle_min" value="-1.5707963"/>
-    <param name="angle_max" value="1.5707963"/>
+    <param name="angle_min" value="-1.5707963"/><!-- from sensor specifications -1.65806279 rad = 95deg-->
+    <param name="angle_max" value="1.5707963"/><!-- this current value is referred to 90 deg-->
   </node>
 
   <node pkg="div_datalogger" type="datalogger.py" name="datalogger" output="screen">
